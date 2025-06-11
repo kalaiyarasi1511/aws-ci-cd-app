@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AWS CI/CD App</title>
+</head>
+<body>
+  <h1>Deployed via AWS CI/CD!</h1>
+</body>
+</html>
