@@ -9,4 +9,4 @@ phases:
       - echo "Building static site"
 artifacts:
   files:
-    - '**/*'
+    - 'my-web-app**/*'
