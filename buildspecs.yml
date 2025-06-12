@@ -1,17 +1,9 @@
 version: 0.2
 
 phases:
-  install:
-    runtime-versions:
-      nodejs: 14
-    commands:
-      echo Installing dependencies...
   build:
     commands:
-      echo Build started...
-  post_build:
-    commands:
-      echo Build completed on date
+      - echo "No build commands needed"
 
 artifacts:
   files:
