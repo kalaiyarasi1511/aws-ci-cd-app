@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+  build:
+    commands:
+      - echo "Building your web app"
+      - mkdir build
+      - cp index.html build/
+
+artifacts:
+  files:
+    - build/**/*
