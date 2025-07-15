@@ -2,11 +2,14 @@ version: 0.2
 
 phases:
   install:
-    commands:
-      - echo "Nothing to install"
+    runtime-versions:
+      nodejs: 18
   build:
     commands:
-      - echo "Building static site"
+      - echo "Building your web app"
+      - mkdir build
+      - cp index.html build/
+
 artifacts:
   files:
-    - 'my-web-app**/*'
+    - build/**/*
