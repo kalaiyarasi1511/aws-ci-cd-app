@@ -3,23 +3,21 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      python: 3.11  # optional, can be removed if not needed
+      python: 3.11
     commands:
       - echo "Installing dependencies (if any)..."
-      - chmod +x scripts/*.sh
+      - chmod +x my-web-app/scripts/*.sh
 
-  build:
-    commands:
-      - echo "Build phase - nothing to build for static HTML site"
+build:
+  commands:
+    - echo "Build phase - nothing to build for static HTML site"
 
-  post_build:
-    commands:
-      - echo "Post-build phase complete"
+post_build:
+  commands:
+    - echo "Post-build phase complete"
 
 artifacts:
   files:
-    - appspec.yml
-    - index.html
-    - scripts/install.sh
-    - scripts/before_install.sh
-    - scripts/start.sh
+    - my-web-app/index.html
+    - my-web-app/appspec.yml
+    - my-web-app/scripts/*.sh
