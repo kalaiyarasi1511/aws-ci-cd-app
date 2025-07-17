@@ -17,7 +17,8 @@ post_build:
     - echo "Post-build phase complete"
 
 artifacts:
+  base-directory: my-web-app
   files:
-    - my-web-app/index.html
-    - my-web-app/appspec.yml
-    - my-web-app/scripts/*.sh
+    - index.html
+    - appspec.yml
+    - scripts/*.sh
