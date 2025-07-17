@@ -8,7 +8,7 @@ phases:
     commands:
       - echo "Building your web app"
       - mkdir build
-      - cp index.html build/
+      - cp my-web-app/index.html build/
 
 artifacts:
   files:
