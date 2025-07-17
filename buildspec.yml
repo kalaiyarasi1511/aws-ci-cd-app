@@ -3,13 +3,23 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 18
+      python: 3.11  # optional, can be removed if not needed
+    commands:
+      - echo "Installing dependencies (if any)..."
+      - chmod +x scripts/*.sh
+
   build:
     commands:
-      - echo "Building your web app"
-      - mkdir build
-      - cp my-web-app/index.html build/
+      - echo "Build phase - nothing to build for static HTML site"
+
+  post_build:
+    commands:
+      - echo "Post-build phase complete"
 
 artifacts:
   files:
-    - build/**/*
+    - appspec.yml
+    - index.html
+    - scripts/install.sh
+    - scripts/before_install.sh
+    - scripts/start.sh
