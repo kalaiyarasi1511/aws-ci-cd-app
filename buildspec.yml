@@ -2,23 +2,14 @@ version: 0.2
 
 phases:
   install:
-    runtime-versions:
-      python: 3.11
     commands:
       - echo "Installing dependencies (if any)..."
-      - chmod +x my-web-app/scripts/*.sh
+      - chmod +x scripts/*.sh
 
-build:
-  commands:
-    - echo "Build phase - nothing to build for static HTML site"
+  build:
+    commands:
+      - echo "Build phase - skipping actual build for this static app"
 
-post_build:
-  commands:
-    - echo "Post-build phase complete"
-
-artifacts:
-  base-directory: my-web-app
-  files:
-    - index.html
-    - appspec.yml
-    - scripts/*.sh
+  post_build:
+    commands:
+      - echo "Build completed on `date`"
