@@ -9,4 +9,3 @@ echo "Starting and enabling Apache (httpd)..."
 sudo systemctl start httpd
 sudo systemctl enable httpd
 echo "======== BeforeInstall: Completed ========"
-
